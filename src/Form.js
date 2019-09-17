@@ -1,27 +1,28 @@
 import React from 'react'
 import logo from './fotoLogin/foto.png'
+import './Form.scss'
 
 const Form = () => {
   return (
-    <div>
-      <h2>
+    <div className="wrapper">
+      <h2 className="header">
         <img src={logo} alt="" />
         Log-in to your account
       </h2>
-      <form>
+      <form className="wrapper-form">
         <div>
-          <i />
-          <input />
+          <input placeholder="E-mail address" className="address"/>
         </div>
-        <div>
-          <i />
-          <input />
+        <div >
+          <input placeholder="Password" className="password"/>
         </div>
-        <button />
+        <button className="push">Login</button>
       </form>
-      <div>
+      <div className="text-link">
         New to us?
-        <a href="#">Sign Up</a>
+        <a href="#" className="link-up">
+          Sign Up
+        </a>
       </div>
     </div>
   )
