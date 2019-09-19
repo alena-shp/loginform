@@ -33,7 +33,6 @@ const FormLogin = () => {
             {errors.email && touched.email && (
               <div className="field-errors">{errors.email}</div>
             )}
-
             <Field
               name="password"
               placeholder="Password"
